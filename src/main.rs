@@ -11,7 +11,6 @@ async fn handle_request(ring: &rio::Rio, stream: &TcpStream) -> io::Result<()> {
         let n = ring.read_at(stream, &buf, 0).await?;
         buf[n] = b'\n';
         ring.write_at(stream, &buf, 0).await?;
-        println!("{:?}", &buf);
     }
 }
 
