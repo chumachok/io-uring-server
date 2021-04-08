@@ -1,0 +1,11 @@
+[package]
+name = "io-uring-server"
+version = "0.1.0"
+authors = ["chumachok <chumachok11@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = { version = "0.3", features = ["thread-pool"] }
+rio = "0.9.4"
